@@ -22,13 +22,11 @@ const action = {
     event: () => alert("Reboot")
 }
 
-const type = "warning";
-
-const notification = { type, data, style, action };
+const notification = { data, style, action };
 
 ReactDOM.render(
     <React.StrictMode>
-        <Notification {...notification} darkmode />
+        <Notification {...notification} />
     </React.StrictMode>,
     document.getElementById('root')
 );
