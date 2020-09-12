@@ -8,9 +8,9 @@
 <span>Push Notification is one of the most component that I love, but unfortunatelly when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b> and <b>easy-to-use one</b>, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
 </span>
 
-[Demo]() • 
+[Demo](https://codesandbox.io/s/q3934) • 
 [Chat](https://spectrum.chat/users/menai-ala-eddine) • 
-[Contribute](/CONTRIBUTING.MD/) 
+[Contribute](https://github.com/MenaiAla/notify/pulls) 
 
 </div>
 
@@ -25,15 +25,15 @@ Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable
 
 ### Features
 
-[x] - Creative design.
+- [x] Creative design.
 
-[x] - Lightwhite.
+- [x] Lightwhite.
 
-[x] - Customizable.
+- [x] Customizable.
 
-[x] - Easy to use.
+- [x] Easy to use.
 
-[x] - Extensive.
+- [x] Extensive.
 
 [Request Feature →]()
 
@@ -70,7 +70,7 @@ const props = { data, action };
 return (<Notify {...props} />);
 
 ```
-[Show me →]()
+[Show me →](https://codesandbox.io/s/q3934)
 
 
 ### Advanced Usage
@@ -99,15 +99,13 @@ const action = {
   event: () => alert("Thank you for your star")
 };
 
-const type = "warning";
+const type = "success";
 
 const props = { type, data, style, action };
 
 return (<Notify {...props} />);
 
 ```
-[Show me →]()
-
 
 #### What about the Dark Mode?
 
@@ -116,8 +114,6 @@ Don't worry, we breath the  Dark Mode too. You need to add just `darkmode` prope
 ```Javascript
 return (<Notify {...props} darkmode/>)
 ```
-
-[Show me →]()
 
 ### API reference
 <table width="100%">
@@ -255,14 +251,15 @@ event: function
 
 Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
 
-[-] - Add customizable media ( image, video) feature.
+- [ ] Add customizable media ( image, video) feature.
 
-[-] - Add customizable position feature.
+- [ ] Add customizable position feature.
 
-[-] - Add customizable background color feature.
+- [ ] Add customizable background color feature.
 
-[Request feature →]()
+[Request feature →](https://github.com/MenaiAla/notify/pulls)
 
-### Contributing Guide
+---
+<h1 align="center">Thank you</h1>
 
-Read the [contribution guide]().
+---
