@@ -35,7 +35,7 @@ Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable
 
 - [x] Extensive.
 
-[Request Feature →]()
+[Request Feature →](https://github.com/MenaiAla/notify/pulls)
 
 ### Installation
 
