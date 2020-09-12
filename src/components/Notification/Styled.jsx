@@ -3,17 +3,17 @@ import styled, { keyframes } from "styled-components"
 const fadeIn = keyframes`{
       from { opacity:0; }
       to { opacity:1; }
-  }`
+}`;
 
 const leftToRight = keyframes`{
-   from { transform:translateX(100%)}
-  to { transform:translateX(0)}
-}`
+   from { transform:translateX(100%);}
+  to { transform:translateX(0);}
+}`;
 
 const bottomToUp = keyframes`{
-  from { transform:translateY(100%)}
- to { transform:translateY(0)}
-}`
+  from { transform:translateY(100%);}
+ to { transform:translateY(0);}
+}`;
 
 export const Wrapper = styled.div`
       position:absolute;
@@ -35,8 +35,8 @@ const setBackgroundColor = darkmode => {
   if (darkmode) {
     return `#000010`;
   }
-  return `#fff`
-}
+  return `#fff`;
+};
 
 const setShadowColor = (type) => {
   switch (type.toLowerCase()) {
@@ -46,7 +46,7 @@ const setShadowColor = (type) => {
     case "error": return "rgba(255,0,0,0.3)";
     default: return "rgba(190,190,190,0.3)";
   }
-}
+};
 
 const setAnimation = animation => {
   switch (animation.toLowerCase()) {
@@ -57,12 +57,12 @@ const setAnimation = animation => {
     case "bottom2up":
       return bottomToUp;
     default: return fadeIn
-  }
-}
+  };
+};
 
 const setDuration = duration => {
   if (duration) {
     return duration
   }
   return 2
-}
+};
