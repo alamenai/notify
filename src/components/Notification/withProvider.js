@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Context from "./context"
+import NotificationContext from "./context"
 
 const WithProvider = Component => {
     const WithContext = props => {
@@ -8,9 +8,9 @@ const WithProvider = Component => {
         const darkmode = props.darkmode;
         const value = { type, visible, setVisible, darkmode };
 
-        return (visible && <Context.Provider value={value} >
+        return (visible && <NotificationContext.Provider value={value} >
             <Component {...props} />
-        </Context.Provider>);
+        </NotificationContext.Provider>);
     }
     return WithContext
 }
