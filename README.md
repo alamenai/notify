@@ -8,7 +8,7 @@
 <span>Push Notification is one of the most component that I love, but unfortunatelly when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b> and <b>easy-to-use one</b>, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
 </span>
 
-[Demo](https://codesandbox.io/s/q3934) • 
+[Demo](https://q3934.csb.app/) • 
 [Chat](https://spectrum.chat/users/menai-ala-eddine) • 
 [Contribute](https://github.com/MenaiAla/notify/pulls) 
 
