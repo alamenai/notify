@@ -3,6 +3,7 @@ import renderer from "react-test-renderer"
 import Enzyme, { shallow, mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 import { Notification } from "./index"
+import Context from "./context"
 import Header from "./Header"
 import Body from "./Body"
 import Action from "./Action"
@@ -64,6 +65,14 @@ describe("<Notification/>", () => {
                 <Body message={message} />
                 <Action name={name} onClick={event} />
             </Wrapper>)).toBeTruthy();
+    });
+
+    //  Undirect test for withProvider.js
+    it("should return a Notification with a context provider", () => {
+        const wrapper = shallow(<Notification {...props} />)
+        expect(wrapper.find(<Context.Provider value={{ type: "info" }} >
+            <Notification {...props} />
+        </Context.Provider>)).toBeTruthy()
     });
 
     test("has a valid snapshot", () => {
