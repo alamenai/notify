@@ -6,10 +6,13 @@
 .pnp.js
 
 # testing
-/coverage
+coverage
+src/components/*/__snapshots__
+src/components/*/*/__snapshots__
+src/components/*/*/*/__snapshots__
 
 # production
-/build
+build
 
 # misc
 .DS_Store
