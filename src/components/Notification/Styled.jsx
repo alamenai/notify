@@ -16,6 +16,9 @@ const bottomToUp = keyframes`{
 }`;
 
 export const Wrapper = styled.div`
+      @media (max-width: 680px), screen and (orientation: portrait) {
+        min-width:240px;         
+      };
       position:absolute;
       overflow:hidden;
       bottom:0;
