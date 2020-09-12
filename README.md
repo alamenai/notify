@@ -5,7 +5,7 @@
 
 ---
 
-<span>Push Notification is one of the most component that I love, but unfortunatelly when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b> and <b>easy-to-use one</b>, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
+<span>Push Notification is one of the most components that I love, but unfortunately, when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b>, and <b>easy-to-use</b> one, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
 </span>
 
 [Demo](https://q3934.csb.app/) • 
