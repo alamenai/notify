@@ -6,6 +6,6 @@ const initialState = {
     setVisible: () => { },
     darkmode: false
 }
-const context = createContext(initialState)
+const NotificationContext = createContext(initialState)
 
-export default context
+export default NotificationContext
