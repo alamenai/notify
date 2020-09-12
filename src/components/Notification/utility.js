@@ -1,0 +1,1 @@
+export const upperCaseFirstLetter = string => string.charAt(0).toUpperCase().concat(string.slice(1))
