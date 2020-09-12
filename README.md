@@ -1,68 +1,268 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="Logo.svg"> 
+  <h1>Notify</h1>
+  <h5>I want to be your :heart: notification in your React application</h5>
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<span>Push Notification is one of the most component that I love, but unfortunatelly when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b> and <b>easy-to-use one</b>, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
+</span>
 
-### `npm start`
+[Demo]() • 
+[Chat](https://spectrum.chat/users/menai-ala-eddine) • 
+[Contribute](/CONTRIBUTING.MD/) 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+--- 
+</div>
 
-### `npm test`
+### Introduction
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Notify is a React component for displaying out-of-the-box notifications in your application.
 
-### `npm run build`
+Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Features
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[x] - Creative design.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[x] - Lightwhite.
 
-### `npm run eject`
+[x] - Customizable.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[x] - Easy to use.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[x] - Extensive.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[Request Feature →]()
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+To get started with Notify, you can simply install it via npm.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```command
+npm install react-notify
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Basic Usage
 
-### Code Splitting
+To add Notify in your application, you need to import it from its package and define the **required** properties.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```Javascript
+import Notify from "react-notify";
 
-### Analyzing the Bundle Size
+const Notification = () => {
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+const data = {
+  title: "Notify updates",
+  subtitle: "Stay tuned with Notify",
+  message: "I want to hear your feedback."
+};
 
-### Making a Progressive Web App
+const action = {
+  name: "Star",
+  event: () => alert("Thank you for your star")
+};
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+const props = { data, action };
 
-### Advanced Configuration
+return (<Notify {...props} />);
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```
+[Show me →]()
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+### Advanced Usage
 
-### `npm run build` fails to minify
+You can customize your `type` and `styles`.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```Javascript
+import Notify from "react-notify";
+
+const Notification = () => {
+
+const data = {
+  title: "Notify updates",
+  subtitle: "Stay tuned with Notify",
+  message: "I want to hear your feedback."
+};
+
+const style = {
+  rounded: true,
+  animation: "bottom2up",
+  duration: 1
+}
+
+const action = {
+  name: "Star",
+  event: () => alert("Thank you for your star")
+};
+
+const type = "warning";
+
+const props = { type, data, style, action };
+
+return (<Notify {...props} />);
+
+```
+[Show me →]()
+
+
+#### What about the Dark Mode?
+
+Don't worry, we breath the  Dark Mode too. You need to add just `darkmode` property.
+
+```Javascript
+return (<Notify {...props} darkmode/>)
+```
+
+[Show me →]()
+
+### API reference
+<table width="100%">
+
+<tr align="center">
+<th>
+Props
+</th>
+<th>
+Type
+</th>
+<th>
+Required
+</th>
+<th>
+Dynamic
+</th>
+<th>
+Default
+</th>
+<th>
+Keys
+</th>
+<th>
+Alternatives
+</th>
+</tr>
+
+<tr align="center">
+<td>
+type
+</td>
+<td>
+string
+</td>
+<td>
+</td>
+<td>
+•
+</td>
+<td>
+info
+</td>
+<td>
+</td>
+<td>
+success | error | warning
+</td>
+</tr>
+
+
+<tr align="center">
+<td>
+data
+</td>
+<td>
+object
+</td>
+<td>
+ •
+</td>
+<td>
+•
+</td>
+<td>
+</td>
+<td>
+title: string
+
+subtitle: string
+
+message: string
+
+</td>
+<td>
+</td>
+</tr>
+
+
+<tr align="center">
+<td>
+style
+</td>
+<td>
+object
+</td>
+<td>
+</td>
+<td>
+•
+</td>
+<td>
+</td>
+<td>
+rounded: boolean
+
+animation: string
+
+duration: string
+
+</td>
+<td>
+</td>
+</tr>
+
+
+
+<tr align="center">
+<td>
+action
+</td>
+<td>
+object
+</td>
+<td>
+•
+</td>
+<td>
+•
+</td>
+<td>
+</td>
+<td>
+name: string
+
+event: function
+
+</td>
+<td>
+</td>
+</tr>
+</table>
+
+### Next Release
+
+Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
+
+[-] - Add customizable media ( image, video) feature.
+
+[-] - Add customizable position feature.
+
+[-] - Add customizable background color feature.
+
+[Request feature →]()
+
+### Contributing Guide
+
+Read the [contribution guide]().
