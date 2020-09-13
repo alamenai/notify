@@ -5,7 +5,7 @@
 
 ---
 
-<span>Push Notification is one of the most components that I love, but unfortunately, when I started looking for <b>well designed</b>, <b>flexible</b>, <b>customizable</b>, and <b>easy-to-use</b> one, I did not find a one that fits my needs and delight users, so I decided to design and develop Notify.
+<span>Notify is React-based component for displaying push notifications in the browser. Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 </span>
 
 [Demo](https://eejv4.csb.app/) • 
@@ -14,14 +14,13 @@
 
 </div>
 
---- 
 </div>
 
-### Introduction
+### Intro
+---
 
-Notify is a React component for displaying out-of-the-box notifications in your application.
+When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop Notify for displaying out-of-the-box push notifications.
 
-Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 
 ### Features
 
