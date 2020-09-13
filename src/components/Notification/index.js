@@ -19,7 +19,7 @@ const Notification = ({ type, data, style, action, darkmode }) => {
         animation: "left2right",
         duration: 2
     }
-    
+
     const { title, subtitle, message } = data
     const { animation, rounded, duration } = style || defaultStyle
     const { name, event } = action
