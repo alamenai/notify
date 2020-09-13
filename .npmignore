@@ -1,0 +1,8 @@
+.storybook
+./src
+./node_modules
+/public
+.gitignore
+jest.config.json
+Logo.svg
+README.md
