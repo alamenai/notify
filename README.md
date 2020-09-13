@@ -5,12 +5,12 @@
 
 ---
 
-<span>Notify is React-based component for displaying push notifications in the browser. Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
+<span>React Push Notify is React-based component for displaying push notifications in the browser. React Push Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 </span>
 
 [Demo](https://eejv4.csb.app/) • 
 [Chat](https://spectrum.chat/users/menai-ala-eddine) • 
-[Contribute](https://github.com/MenaiAla/notify/pulls) 
+[Contribute](https://github.com/MenaiAla/react-push-notify/pulls) 
 
 </div>
 
@@ -19,7 +19,7 @@
 ### Intro
 ---
 
-When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop Notify for displaying out-of-the-box push notifications.
+When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
 
 
 ### Features
@@ -34,22 +34,22 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 
 - [x] Extensive.
 
-[Request Feature →](https://github.com/MenaiAla/notify/pulls)
+[Request Feature →](https://github.com/MenaiAla/react-push-notify/pulls)
 
 ### Installation
 
-To get started with Notify, you can simply install it via npm.
+To get started with React Push Notify, you can simply install it via npm.
 
 ```command
-npm install react-notify
+npm install react-push-notify
 ```
 
 ### Basic Usage
 
-To add Notify in your application, you need to import it from its package and define the **required** properties.
+To add React Push Notify in your application, you need to import it from its package and define the **required** properties.
 
 ```Javascript
-import Notify from "react-notify";
+import Notify from "react-push-notify";
 
 const Notification = () => {
 
@@ -77,7 +77,7 @@ return (<Notify {...props} />);
 You can customize your `type` and `styles`.
 
 ```Javascript
-import Notify from "react-notify";
+import Notify from "react-push-notify";
 
 const Notification = () => {
 
@@ -248,7 +248,7 @@ event: function
 
 ### Next Release
 
-Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
+React Push Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
 
 - [ ] Add customizable media ( image, video) feature.
 
@@ -256,7 +256,7 @@ Notify started simple and minimal, but it needs your feedback to add more featur
 
 - [ ] Add customizable background color feature.
 
-[Request feature →](https://github.com/MenaiAla/notify/pulls)
+[Request feature →](https://github.com/MenaiAla/react-push-notify/pulls)
 
 ---
 <h1 align="center">Thank you</h1>
