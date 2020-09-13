@@ -8,6 +8,7 @@
 <span>React Push Notify is React-based component for displaying push notifications in the browser. React Push Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 </span>
 
+[Download](https://www.npmjs.com/package/react-push-notify) • 
 [Demo](https://eejv4.csb.app/) • 
 [Chat](https://spectrum.chat/users/menai-ala-eddine) • 
 [Contribute](https://github.com/MenaiAla/react-push-notify/pulls) 
