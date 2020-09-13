@@ -1,8 +1,11 @@
 .storybook
-./src
-./node_modules
-/public
+src
+node_modules
+public
 .gitignore
+.npmignore
 jest.config.json
 Logo.svg
+package.json
+package-lock.json
 README.md
