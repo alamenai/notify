@@ -1,7 +1,7 @@
 {
-    "name": "notify",
+    "name": "react-notify",
     "version": "0.1.0",
-    "description": "Push notification for React",
+    "description": "Push notification component for React",
     "main": "./src/Notification/index",
     "license": "MIT",
     "dependencies": {
