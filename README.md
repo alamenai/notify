@@ -1,6 +1,6 @@
 <div align="center">
   <img src="Logo.svg"> 
-  <h1>Notify</h1>
+  <h1>React Push Notify</h1>
   <h5>I want to be your :heart: notification in your React application</h5>
 
 ---
