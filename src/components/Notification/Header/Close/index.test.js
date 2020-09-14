@@ -7,13 +7,14 @@ import { Button } from "./Styled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-Enzyme.configure({ adapter: new Adapter() })
+Enzyme.configure({ adapter: new Adapter() });
 
 describe("<Close/>", () => {
 
     const setVisible = value => ({ visible: value })
 
     const props = {
+        color: null,
         type: "info",
         onClick: () => setVisible(true)
     }
@@ -30,5 +31,5 @@ describe("<Close/>", () => {
         const component = renderer.create(<Close />);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
-    })
-})
+    });
+});
