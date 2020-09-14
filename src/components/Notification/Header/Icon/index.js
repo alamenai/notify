@@ -11,9 +11,9 @@ import {
 
 const Icon = () => {
 
-    const { type } = useContext(Context)
+    const { type, color } = useContext(Context)
 
-    return (<Wrapper type={type}>
+    return (<Wrapper type={type} color={color}>
         <FontAwesomeIcon
             icon={setIcon(type)}
             size="2x" />
