@@ -3,7 +3,7 @@
         "registry": "https://npm.pkg.github.com/"
     },
     "name": "react-push-notify",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Push notification component for React",
     "main": "dist/index.js",
     "module": "dist/index.js",
