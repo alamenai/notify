@@ -14,10 +14,10 @@ const Title = ({ title, subtitle }) => {
         throw new Error(`subtitle is a required property`)
     }
 
-    const { type } = useContext(Context);
+    const { type, color } = useContext(Context);
 
     return (<Wrapper>
-        <StyledTitle type={type}>{upperCaseFirstLetter(title)}</StyledTitle>
+        <StyledTitle type={type} color={color}>{upperCaseFirstLetter(title)}</StyledTitle>
         <Subtitle >{upperCaseFirstLetter(subtitle)}</Subtitle>
     </Wrapper>)
 }
