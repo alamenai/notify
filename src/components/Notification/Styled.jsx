@@ -45,9 +45,9 @@ const setBackgroundColor = darkmode => {
 const setShadowColor = (type, color) => {
   if (color) {
     if (color.indexOf('#') === 0) {
-      return hexToRgba(color);
+      return hexToRgba(color, 0.3);
     }
-    return rgbToRgba(color, true);
+    return rgbToRgba(color, 0.3);
   }
   switch (type.toLowerCase()) {
     case "info": return "rgba(0, 87, 255, 0.3)";
