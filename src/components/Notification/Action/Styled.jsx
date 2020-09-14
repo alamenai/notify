@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { hexToRgba, rgbToRgba } from "../utility"
 
 export const Wrapper = styled.div`
        display:flex;
@@ -7,8 +8,8 @@ export const Wrapper = styled.div`
 `
 
 export const Button = styled.button`
-       background-color: ${({ type }) => pickBackgroundColor(type, true)};
-       color:${({ type }) => pickColor(type)};
+       background-color: ${({ type, color }) => pickBackgroundColor(type, color, true)};
+       color:${({ type, color }) => pickColor(type, color)};
        position:absolute;
        right:0;
        padding-left:10px;
@@ -24,13 +25,19 @@ export const Button = styled.button`
        font-weight:600; 
        &:hover {
         color: white;
-        background-color:${({ type }) => pickBackgroundColor(type)};
+        background-color:${({ type, color }) => pickBackgroundColor(type, color)};
       }
       &:focus{
           outline:none
       }
 `
-const pickBackgroundColor = (type, alpha) => {
+const pickBackgroundColor = (type, color, alpha) => {
+    if (color) {
+        if (color.startsWith('#')) {
+            return hexToRgba(color, alpha);
+        }
+        return rgbToRgba(color, alpha);
+    }
     switch (type) {
         case "info": return `rgba(0,151,255,${alpha ? '0.1' : 1})`;
         case "warning": return `rgba(255,157,0,${alpha ? '0.1' : 1})`;
@@ -40,7 +47,10 @@ const pickBackgroundColor = (type, alpha) => {
     }
 }
 
-const pickColor = (type) => {
+const pickColor = (type, color) => {
+    if (color) {
+        return color;
+    }
     switch (type) {
         case "info": return "rgba(0,151,255)";
         case "warning": return "rgba(255,157,0)";
