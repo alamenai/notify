@@ -15,9 +15,9 @@ describe("<Icon/>", () => {
     }
 
     it('renders children when passed in', () => {
-        const { type } = props
+        const { type, color } = props
 
-        const Element = <Wrapper type={props.type}>
+        const Element = <Wrapper type={type} color={color}>
             <FontAwesomeIcon
                 icon={setIcon(type)}
                 size="2x" />
