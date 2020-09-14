@@ -10,7 +10,6 @@ Enzyme.configure({ adapter: new Adapter() })
 describe("<Action/>", () => {
 
     const props = {
-        type: "info",
         name: 'Reboot',
         onClick: () => alert("Reboot")
     }
@@ -23,12 +22,16 @@ describe("<Action/>", () => {
     });
 
     it('renders children when passed in', () => {
-        const { type, name, onClick } = props
+        const { name, onClick } = props
         const wrapper = shallow(<Action {...props} />);
-        expect(wrapper.contains(
-            <Wrapper>
-                <Button type={type} onClick={onClick}>{name}</Button>
-            </Wrapper>)).toBe(true);
+        expect(wrapper.find(< Wrapper >
+            <Button
+                type="info"
+                color={null}
+                onClick={onClick}>
+                {name}
+            </Button>
+        </Wrapper >)).toBeTruthy();
     });
 
     test("has a valid snapshot", () => {

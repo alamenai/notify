@@ -28,7 +28,7 @@ describe("<Title/>", () => {
         const wrapper = shallow(<Title {...props} />);
         expect(wrapper.contains(
             <Wrapper>
-                <StyledTitle type={type}>{upperCaseFirstLetter(title)}</StyledTitle>
+                <StyledTitle type={type} color={null}>{upperCaseFirstLetter(title)}</StyledTitle>
                 <Subtitle >{upperCaseFirstLetter(subtitle)}</Subtitle>
             </Wrapper>)).toBe(true);
     });

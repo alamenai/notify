@@ -1,4 +1,5 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components";
+import { hexToRgba, rgbToRgba } from "./utility";
 
 const fadeIn = keyframes`{
       from { opacity:0; }
@@ -30,7 +31,7 @@ export const Wrapper = styled.div`
       min-width:350px;
       min-height:100px;
       border-radius:${({ rounded }) => rounded ? `1.2em` : `0.2em`};
-      box-shadow: 0 0.2em 2em 0 ${({ type }) => setShadowColor(type)};
+      box-shadow: 0 0.2em 2em 0 ${({ type, color }) => setShadowColor(type, color)};
       animation: ${({ duration }) => setDuration(duration) + `s`} ${({ animation }) => setAnimation(animation)};
       animation-fill-mode: forwards;`
 
@@ -41,7 +42,13 @@ const setBackgroundColor = darkmode => {
   return `#fff`;
 };
 
-const setShadowColor = (type) => {
+const setShadowColor = (type, color) => {
+  if (color) {
+    if (color.indexOf('#') === 0) {
+      return hexToRgba(color);
+    }
+    return rgbToRgba(color);
+  }
   switch (type.toLowerCase()) {
     case "info": return "rgba(0,151,255,0.3)";
     case "warning": return "rgba(255,157,0,0.3)";

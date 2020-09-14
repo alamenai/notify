@@ -12,8 +12,9 @@ const data = {
 }
 
 const style = {
+    color: 'rgb(150,5,255)',
     rounded: true,
-    animation: "left2right",
+    animation: "bottom2up",
     duration: 1
 }
 
@@ -23,6 +24,8 @@ const action = {
 }
 
 const notification = { data, style, action };
+
+document.title = "React Push Notify 0.2.0";
 
 ReactDOM.render(
     <React.StrictMode>

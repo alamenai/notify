@@ -5,8 +5,9 @@ const WithProvider = Component => {
     const WithContext = props => {
         const [visible, setVisible] = useState(true);
         const type = props.type || "info";
+        const { color } = props.style || null;
         const darkmode = props.darkmode;
-        const value = { type, visible, setVisible, darkmode };
+        const value = { color, type, visible, setVisible, darkmode };
 
         return (visible && <NotificationContext.Provider value={value} >
             <Component {...props} />

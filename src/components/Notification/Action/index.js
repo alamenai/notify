@@ -5,14 +5,17 @@ import Context from "../context"
 
 const Action = ({ name, onClick }) => {
 
-    const { type } = useContext(Context);
+    const { type, color } = useContext(Context);
 
     if (!(typeof onClick === "function")) {
         throw new Error("Action event should be a function")
     }
 
     return (< Wrapper >
-        <Button type={type} onClick={onClick}>{name}</Button>
+        <Button
+            type={type}
+            color={color}
+            onClick={onClick}>{name}</Button>
     </Wrapper >)
 }
 

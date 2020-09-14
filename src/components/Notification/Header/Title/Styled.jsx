@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `
 
 export const Title = styled.p`
-  color: ${({ type }) => pickColor(type)};
+  color: ${({ type, color }) => pickColor(type, color)};
   font-size:15px;
   font-weight:600;
   margin-top:0px;
@@ -20,7 +20,10 @@ export const Subtitle = styled.p`
   font-weight:500;
   margin-top:3px;
 `
-const pickColor = (type) => {
+const pickColor = (type, color) => {
+  if (color) {
+    return color;
+  }
   switch (type) {
     case "info": return "rgba(0,151,255)";
     case "warning": return "rgba(255,157,0)";
