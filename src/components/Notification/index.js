@@ -15,13 +15,14 @@ const AVAILABLE_TYPES = [
 const Notification = ({ type, data, style, action, darkmode }) => {
 
     const defaultStyle = {
+        color: "rgb(0,151,255)",
         rounded: false,
         animation: "left2right",
         duration: 2
     }
 
     const { title, subtitle, message } = data
-    const { animation, rounded, duration } = style || defaultStyle
+    const { animation, rounded, duration, color } = style || defaultStyle
     const { name, event } = action
 
 
@@ -37,6 +38,7 @@ const Notification = ({ type, data, style, action, darkmode }) => {
         type={type}
         animation={animation}
         rounded={rounded}
+        color={color}
         darkmode={darkmode}
         duration={duration}>
         <Header title={title} subtitle={subtitle} />
