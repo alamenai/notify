@@ -2,9 +2,12 @@ import styled from "styled-components"
 
 export const Wrapper = styled.div`
        padding-right:8px;
-       color:${({ type }) => pickColor(type)} ;     
+       color:${({ type, color }) => pickColor(type, color)} ;     
 `
-const pickColor = (type) => {
+const pickColor = (type, color) => {
+    if (color) {
+        return color;
+    }
     switch (type) {
         case "info": return "rgba(0,151,255)";
         case "warning": return "rgba(255,157,0)";
