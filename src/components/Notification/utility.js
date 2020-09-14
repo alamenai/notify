@@ -5,11 +5,11 @@ export const hexToRgba = (hex, alpha) => {
     const chunkSize = Math.floor((hex.length - 1) / 3)
     const hexArr = getChunksFromString(hex.slice(1), chunkSize)
     const [r, g, b, a] = hexArr.map(convertHexUnitTo256)
-    return `rgba(${r}, ${g}, ${b}, ${getAlphafloat(a, alpha ? 0.3 : 1)})`
+    return `rgba(${r}, ${g}, ${b}, ${getAlphafloat(a, alpha ? alpha : 1)})`
 }
 
 export const rgbToRgba = (color, alpha) => {
-    return color.replace(')', `${alpha ? ',0.3' : ', 1'}` + ')').replace('rgb', 'rgba');
+    return color.replace(')', `${alpha ? `,${alpha}` : ', 1'}` + ')').replace('rgb', 'rgba');
 }
 
 const isValidHex = hex => /^#([A-Fa-f0-9]{3,4}){1,2}$/.test(hex)
