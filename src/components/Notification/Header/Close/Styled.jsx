@@ -15,7 +15,7 @@ const pickColor = (type, color) => {
         return color;
     }
     switch (type) {
-        case "info": return "rgba(0,151,255)";
+        case "info": return "rgba(0, 87, 255)";
         case "warning": return "rgba(255,157,0)";
         case "success": return "rgba(0,216,0)";
         case "error": return "rgba(255,0,0)";

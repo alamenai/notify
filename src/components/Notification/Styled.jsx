@@ -47,10 +47,10 @@ const setShadowColor = (type, color) => {
     if (color.indexOf('#') === 0) {
       return hexToRgba(color);
     }
-    return rgbToRgba(color);
+    return rgbToRgba(color, true);
   }
   switch (type.toLowerCase()) {
-    case "info": return "rgba(0,151,255,0.3)";
+    case "info": return "rgba(0, 87, 255, 0.3)";
     case "warning": return "rgba(255,157,0,0.3)";
     case "success": return "rgba(0,216,0,0.3)";
     case "error": return "rgba(255,0,0,0.3)";
