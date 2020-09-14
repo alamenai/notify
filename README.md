@@ -20,10 +20,11 @@
 ### Intro
 ---
 
-When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
+When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
 
 
 ### Features
+---
 
 - [x] Creative design.
 
@@ -38,6 +39,7 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 [Request Feature →](https://github.com/MenaiAla/react-push-notify/pulls)
 
 ### Installation
+---
 
 To get started with React Push Notify, you can simply install it via npm.
 
@@ -45,7 +47,10 @@ To get started with React Push Notify, you can simply install it via npm.
 npm install react-push-notify
 ```
 
+[Discover on npm →](https://www.npmjs.com/package/react-push-notify)
+
 ### Basic Usage
+---
 
 To add React Push Notify in your application, you need to import it from its package and define the **required** properties.
 
@@ -74,6 +79,7 @@ return (<Notify {...props} />);
 
 
 ### Advanced Usage
+---
 
 You can customize your `type` and `styles`.
 
@@ -109,13 +115,15 @@ return (<Notify {...props} />);
 
 #### What about the Dark Mode?
 
-Don't worry, we breath the  Dark Mode too. You need to add just `darkmode` property.
+Don't worry, the  Dark Mode is included too. You need to add just `darkmode` property.
 
 ```Javascript
 return (<Notify {...props} darkmode/>)
 ```
 
 ### API reference
+---
+
 <table width="100%">
 
 <tr align="center">
@@ -206,6 +214,12 @@ object
 •
 </td>
 <td>
+rounded: false
+
+animation: "left2right"
+
+duration: 2
+
 </td>
 <td>
 rounded: boolean
@@ -248,6 +262,7 @@ event: function
 </table>
 
 ### Next Release
+---
 
 React Push Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
 
