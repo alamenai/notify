@@ -12,8 +12,9 @@ const data = {
 }
 
 const style = {
+    color: 'rgb(150,5,255)',
     rounded: true,
-    animation: "left2right",
+    animation: "bottom2up",
     duration: 1
 }
 
