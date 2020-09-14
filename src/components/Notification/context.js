@@ -1,6 +1,7 @@
 import { createContext } from "react"
 
 const initialState = {
+    color: null,
     type: "info",
     visibile: true,
     setVisible: () => { },
