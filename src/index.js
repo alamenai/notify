@@ -24,6 +24,8 @@ const action = {
 
 const notification = { data, style, action };
 
+document.title = "React Push Notify 0.2.0";
+
 ReactDOM.render(
     <React.StrictMode>
         <Notification {...notification} />
