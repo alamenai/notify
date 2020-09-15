@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Logo.svg"> 
+  <img src="https://github.com/MenaiAla/react-push-notify/blob/master/Logo.svg"> 
   <h1>React Push Notify</h1>
   <h5>I want to be your :heart: notification in your React application</h5>
 
