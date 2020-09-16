@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Notification, { Media } from "./components/Notification";
-import PATH from "./assets/videos/sample_video.mp4";
+import MEDIA_PATH from "./assets/videos/sample_video.mp4";
 
 const data = {
     title: "System updates",
@@ -30,7 +30,7 @@ document.title = "React Push Notify 0.2.0";
 ReactDOM.render(
     <React.StrictMode>
         <Notification {...notification} darkmode >
-            <Media src={PATH} link='https://www.github.com' />
+            <Media src={MEDIA_PATH} link='https://www.github.com' />
         </Notification>
     </React.StrictMode>,
     document.getElementById('root')
