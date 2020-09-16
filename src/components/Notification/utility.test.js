@@ -1,4 +1,4 @@
-import { upperCaseFirstLetter, hexToRgba, rgbToRgba } from "./utility"
+import { upperCaseFirstLetter, hexToRgba, rgbToRgba, isVideo, isImage, getExtension } from "./utility"
 
 describe("upperCaseFirstLetter utility function", () => {
     it("should uppercase the first letter of a string", () => {
@@ -20,5 +20,27 @@ describe("hexToRgba utility function", () => {
 describe("rgbToRgba utility function", () => {
     it("should convert rgb format to rgba format", () => {
         expect(rgbToRgba("rgb(0, 87, 255)")).toBe("rgba(0, 87, 255, 1)");
+    });
+});
+
+describe("isVideo utility function", () => {
+    it("should validate the video extension", () => {
+        expect(isVideo(".mp4")).toBeTruthy();
+        expect(isVideo(".mp3")).toBeFalsy();
+    });
+});
+
+describe("isImage utility function", () => {
+    it("should validate the image extension", () => {
+        expect(isImage(".jpg")).toBeTruthy();
+        expect(isImage(".png")).toBeTruthy();
+        expect(isImage(".mp3")).toBeFalsy();
+    });
+});
+
+describe("getExtension utility function", () => {
+    it("should retrieve the extension if the image or the video", () => {
+        expect(getExtension("my_image.jpg")).toBe("jpg");
+        expect(getExtension("my_video.png")).toBe("png");
     });
 });
