@@ -4,6 +4,7 @@ import { Wrapper } from "./Styled"
 import Header from "./Header"
 import Body from "./Body"
 import Action from "./Action"
+import Media from "./Media"
 import WithProvider from "./withProvider"
 
 const AVAILABLE_TYPES = [
@@ -12,7 +13,7 @@ const AVAILABLE_TYPES = [
     "success",
     "error"];
 
-const Notification = ({ type, data, style, action, darkmode }) => {
+const Notification = ({ type, data, style, action, darkmode, children }) => {
 
     const defaultStyle = {
         color: "rgb(0,151,255)",
@@ -43,6 +44,7 @@ const Notification = ({ type, data, style, action, darkmode }) => {
         duration={duration}>
         <Header title={title} subtitle={subtitle} />
         <Body message={message} />
+        {children}
         <Action name={name} onClick={event} />
     </Wrapper>)
 }
@@ -60,4 +62,4 @@ Notification.defaultProps = {
 }
 
 export default WithProvider(Notification)
-export { Notification }
+export { Notification, Media }
