@@ -23,5 +23,10 @@ const getAlphafloat = (a, alpha) => {
     if ((typeof alpha != "number") || alpha < 0 || alpha > 1) {
         return 1
     }
-    return alpha
+    return alpha;
 }
+
+export const isVideo = url => (/\.(mp4|3gp|ogg|wmv|webm|flv|avi*|wav|vob*)$/i).test(url);
+export const isImage = url => (/\.(gif|jpe?g|tiff?|png|webp|bmp)$/i).test(url);
+
+export const getExtension = url => url.slice(url.length - 3, url.length);
