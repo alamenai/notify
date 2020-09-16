@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Notification, { Media } from "./components/Notification";
-import PATH from "./assets/images/video.mp4";
+import PATH from "./assets/videos/sample_video.mp4";
 
 const data = {
     title: "System updates",
