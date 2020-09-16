@@ -20,7 +20,7 @@
 ### Intro
 ---
 
-When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
+When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight the users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
 
 
 ### Features
@@ -261,20 +261,10 @@ event: function
 </tr>
 </table>
 
-### Next Release
+### Changelog
 ---
+[Changelog](/CHANGELOG.md).
 
-React Push Notify started simple and minimal, but it needs your feedback to add more features and fix current bugs.
-
-- [ ] Add customizable media ( image, video) feature.
-
-- [ ] Add customizable position feature.
-
-- [ ] Add customizable background color feature.
-
-[Request feature →](https://github.com/MenaiAla/react-push-notify/pulls)
-
+### Licence
 ---
-<h1 align="center">Thank you</h1>
-
----
+[MIT](/LICENSE).
