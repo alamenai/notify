@@ -2,7 +2,7 @@
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
     },
-    "name": "react-push-notify",
+    "name": "@ala_eddine/react-push-notify",
     "version": "0.2.0",
     "description": "Push notification component for React",
     "main": "dist/index.js",
@@ -20,6 +20,9 @@
         "react-notifications",
         "react-push-notification"
     ],
+    "repository": {
+        "url": "git:https://github.com/MenaiAla/react-push-notify.git"
+    },
     "dependencies": {
         "@babel/runtime": "^7.11.2",
         "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -31,6 +34,7 @@
         "@testing-library/user-event": "^7.2.1",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-push-notify": "^0.2.0",
         "react-scripts": "3.4.3",
         "styled-components": "^5.2.0"
     },
