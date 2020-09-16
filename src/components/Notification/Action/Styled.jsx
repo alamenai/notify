@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 `
 
 export const Button = styled.button`
-       background-color: ${({ type, color }) => pickBackgroundColor(type, color, true)};
+       background-color: ${({ type, color }) => pickBackgroundColor(type, color, 0.1)};
        color:${({ type, color }) => pickColor(type, color)};
        position:absolute;
        right:0;
@@ -17,7 +17,7 @@ export const Button = styled.button`
        padding-top:5px;
        padding-bottom:5px;
        margin-bottom:0px;
-       margin-right:15px;
+       margin-right:calc(1.2em + 5px);
        border:none;
        border-radius:5px;
        cursor:pointer;
