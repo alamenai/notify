@@ -44,7 +44,7 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 To get started with React Push Notify, you can simply install it via npm.
 
 ```command
-npm install react-push-notify
+npm install @ala_eddine/react-push-notify
 ```
 
 [Discover on npm →](https://www.npmjs.com/package/react-push-notify)
@@ -55,7 +55,7 @@ npm install react-push-notify
 To add React Push Notify in your application, you need to import it from its package and define the **required** properties.
 
 ```Javascript
-import Notify from "react-push-notify";
+import Notify from "@ala_eddine/react-push-notify";
 
 const Notification = () => {
 
@@ -84,7 +84,7 @@ return (<Notify {...props} />);
 You can customize your `type` and `styles`.
 
 ```Javascript
-import Notify from "react-push-notify";
+import Notify from "@ala_eddine/react-push-notify";
 
 const Notification = () => {
 
