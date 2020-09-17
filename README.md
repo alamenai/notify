@@ -43,7 +43,7 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 
 To get started with React Push Notify, you can simply install it via npm.
 
-```command
+```
 npm install @ala_eddine/react-push-notify
 ```
 
@@ -119,6 +119,16 @@ Don't worry, the  Dark Mode is included too. You need to add just `darkmode` pro
 
 ```Javascript
 return (<Notify {...props} darkmode/>)
+```
+### Media Usage
+> New feature included to 0.2.0
+
+Now, you can include a Media (image, video) to your Notification.
+
+```js
+        <Notify {...props} darkmode >
+            <Media src={MEDIA_PATH} link={LINK} />
+        </Notify>
 ```
 
 ### API reference
