@@ -17,13 +17,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-### Added
+### Features
 
 - [x] Media feature.
 
 - [x] Customizable color feature.
 
-### Changed
+### Bugs
 
 - [x] Fixed `Action` background color on the Dark Mode.
 
