@@ -131,6 +131,8 @@ Now, you can include a Media (image, video) to your Notification.
         </Notify>
 ```
 
+[Show me →](https://codesandbox.io/s/q3934)
+
 ### API reference
 ---
 

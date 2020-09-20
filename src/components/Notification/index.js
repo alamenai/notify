@@ -13,7 +13,18 @@ const AVAILABLE_TYPES = [
     "success",
     "error"];
 
-const Notification = ({ type, data, style, action, darkmode, children }) => {
+const Notification = ({ type, data, style, action, darkmode, autohide, children }) => {
+
+    const [visible, setVisible] = React.useState(true);
+
+    React.useEffect(() => {
+        if (autohide) {
+            setTimeout(() => setVisible(false), 5000);
+        }
+        return () => {
+            clearTimeout();
+        }
+    }, [autohide]);
 
     const defaultStyle = {
         color: "rgb(0,151,255)",
@@ -22,20 +33,20 @@ const Notification = ({ type, data, style, action, darkmode, children }) => {
         duration: 2
     }
 
-    const { title, subtitle, message } = data
-    const { animation, rounded, duration, color } = style || defaultStyle
-    const { name, event } = action
+    const { title, subtitle, message } = data;
+    const { animation, rounded, duration, color } = style || defaultStyle;
+    const { name, event } = action;
 
 
     if (!AVAILABLE_TYPES.includes(type)) {
-        throw new Error(type + ' is not included in notification types')
+        throw new Error(type + ' is not included in notification types');
     }
 
     if (duration && !(typeof duration === "number") && !Number(duration)) {
-        throw new Error("duration should be a number")
+        throw new Error("duration should be a number");
     }
 
-    return (<Wrapper
+    return (visible ? <Wrapper
         type={type}
         animation={animation}
         rounded={rounded}
@@ -46,8 +57,8 @@ const Notification = ({ type, data, style, action, darkmode, children }) => {
         <Body message={message} />
         {children}
         <Action name={name} onClick={event} />
-    </Wrapper>)
-}
+    </Wrapper> : null)
+};
 
 Notification.propTypes = {
     type: PropTypes.string.isRequired,
@@ -55,11 +66,11 @@ Notification.propTypes = {
     style: PropTypes.object,
     action: PropTypes.object.isRequired,
     darkmode: PropTypes.bool
-}
+};
 
 Notification.defaultProps = {
     type: "info"
-}
+};
 
 export default WithProvider(Notification)
 export { Notification, Media }
