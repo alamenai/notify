@@ -1,6 +1,6 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import Enzyme, { shallow, mount } from "enzyme"
+import Enzyme, { mount } from "enzyme"
 import Adapter from "enzyme-adapter-react-16"
 import { Notification } from "./index"
 import Context from "./context"
@@ -12,6 +12,8 @@ import { Wrapper } from "./Styled"
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("<Notification/>", () => {
+
+    let wrapper;
 
     const data = {
         title: "System updates",
@@ -31,14 +33,23 @@ describe("<Notification/>", () => {
     }
 
     const props = {
+        autohide: true,
         type: "info",
         data: data,
         style: style,
-        action: action,
+        action: action
     }
 
+    beforeEach(() => {
+        jest.useFakeTimers();
+        wrapper = mount(<Notification {...props} />);
+    });
+
+    it('should hide the Notification after 5 seconds', () => {
+        expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 5000);
+    });
+
     it('allows us to set props', () => {
-        const wrapper = mount(<Notification {...props} />);
         expect(wrapper.props().type).toBe('info');
         wrapper.setProps({ type: 'warning' });
         expect(wrapper.props().type).toBe('warning');
@@ -54,7 +65,6 @@ describe("<Notification/>", () => {
         const { animation, rounded, duration } = style;
         const { name, event } = action;
 
-        const wrapper = shallow(<Notification {...props} />);
         expect(wrapper.contains(
             <Wrapper
                 type={type}
@@ -69,10 +79,9 @@ describe("<Notification/>", () => {
 
     //  Undirect test for withProvider.js
     it("should return a Notification with a context provider", () => {
-        const wrapper = shallow(<Notification {...props} />)
         expect(wrapper.find(<Context.Provider value={{ type: "info" }} >
             <Notification {...props} />
-        </Context.Provider>)).toBeTruthy()
+        </Context.Provider>)).toBeTruthy();
     });
 
     test("has a valid snapshot", () => {
@@ -80,4 +89,4 @@ describe("<Notification/>", () => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
-})
+});
