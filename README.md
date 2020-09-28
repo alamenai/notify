@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://github.com/MenaiAla/react-push-notify/blob/master/Logo.svg"> 
+  <img src="./Logo.svg"> 
   <h1>React Push Notify</h1>
-  <h5>I want to be your :heart: notification in your React application</h5>
+  <h3>I want to be your :heart: notification in your React application</h3>
 
 ---
 
@@ -269,6 +269,31 @@ event: function
 
 </td>
 <td>
+</td>
+</tr>
+
+
+<tr align="center">
+<td>
+autohide
+</td>
+<td>
+boolean
+</td>
+<td>
+
+</td>
+<td>
+•
+</td>
+<td>
+false
+</td>
+<td>
+-
+</td>
+<td>
+true
 </td>
 </tr>
 </table>
