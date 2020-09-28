@@ -170,14 +170,16 @@ type
 string
 </td>
 <td>
+-
 </td>
 <td>
-•
+yes
 </td>
 <td>
 info
 </td>
 <td>
+-
 </td>
 <td>
 success | error | warning
@@ -193,12 +195,13 @@ data
 object
 </td>
 <td>
- •
+ yes
 </td>
 <td>
-•
+yes
 </td>
 <td>
+-
 </td>
 <td>
 title: string
@@ -209,6 +212,7 @@ message: string
 
 </td>
 <td>
+-
 </td>
 </tr>
 
@@ -221,9 +225,10 @@ style
 object
 </td>
 <td>
+-
 </td>
 <td>
-•
+yes
 </td>
 <td>
 rounded: false
@@ -242,6 +247,7 @@ duration: string
 
 </td>
 <td>
+-
 </td>
 </tr>
 
@@ -255,12 +261,13 @@ action
 object
 </td>
 <td>
-•
+yes
 </td>
 <td>
-•
+yes
 </td>
 <td>
+-
 </td>
 <td>
 name: string
@@ -269,6 +276,7 @@ event: function
 
 </td>
 <td>
+-
 </td>
 </tr>
 
@@ -284,7 +292,7 @@ boolean
 
 </td>
 <td>
-•
+yes
 </td>
 <td>
 false
