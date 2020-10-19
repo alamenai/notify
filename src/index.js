@@ -29,7 +29,7 @@ document.title = "React Push Notify 0.2.0";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Notification {...notification} darkmode autohide >
+        <Notification {...notification} darkmode  >
             <Media src={MEDIA_PATH} link='https://www.github.com' />
         </Notification>
     </React.StrictMode>,
