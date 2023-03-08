@@ -16,17 +16,15 @@ Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable
 [Contribute](https://github.com/MenaiAla/react-push-notify/pulls) 
 
 </div>
+<br>
+<br>
 
-</div>
-
-### Intro
----
+<h2 align="center">Quick Intro</h2>
 
 When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight the users, I did not find a one that requires only **one line of code**. So, I decided to design and develop Notify for displaying out-of-the-box push notifications.
 
-
-### Features
----
+<br>
+<h2 align="center">Features</h2>
 
 - [x] Creative design.
 
@@ -38,21 +36,29 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 
 - [x] Extensive.
 
-[Request Feature →](https://github.com/MenaiAla/react-push-notify/pulls)
+<div align="center">
 
-### Installation
----
+[![Request Feature](https://readme-components.vercel.app/api?component=button&text=Request+New+Feature)](https://github.com/MenaiAla/react-push-notify/pulls)
+
+</div>
+
+<br>
+<h2 align="center">Installation</h2>
 
 To get started with Notify, you can simply install it via npm.
 
 ```
 npm install @ala_eddine/react-push-notify
 ```
+<br>
+<div align="center">
 
-[Discover on npm →](https://www.npmjs.com/package/react-push-notify)
+[![Discover on npm](https://readme-components.vercel.app/api?component=button&text=Discover+on+npm)](https://www.npmjs.com/package/react-push-notify)
 
-### Basic Usage
----
+</div>
+
+<br>
+<h2 align="center">Basic Usage</h2>
 
 To add Notify in your application, you need to import it from its package and define the **required** properties.
 
@@ -77,11 +83,18 @@ const props = { data, action };
 return (<Notify {...props} />);
 
 ```
-[Show me →](https://codesandbox.io/s/q3934)
+
+<br>
+
+<div align="center">
+
+[![Show me →](https://readme-components.vercel.app/api?component=button&text=Show+Live+Demo+)](https://codesandbox.io/s/q3934)
+
+</div>
 
 
-### Advanced Usage
----
+<br>
+<h2 align="center">Advanced Usage</h2>
 
 You can customize your `type` and `styles`.
 
@@ -114,16 +127,17 @@ const props = { type, data, style, action };
 return (<Notify {...props} />);
 
 ```
-
-#### What about the Dark Mode?
+<br>
+<h2 align="center">What about the Dark Mode?</h2>
 
 Don't worry, the  **Dark Mode** is included too. You need to add just `darkmode` property.
 
 ```Javascript
 return (<Notify {...props} darkmode/>)
 ```
-### Media Usage
-> New feature included to 0.2.0
+
+<br>
+<h2 align="center">Media Usage</h2>
 
 Now, you can include a Media (image, video) to your Notification.
 
@@ -133,10 +147,16 @@ Now, you can include a Media (image, video) to your Notification.
         </Notify>
 ```
 
-[Show me →](https://codesandbox.io/s/q3934)
+<br>
 
-### API reference
----
+<div align="center">
+
+[![Show me →](https://readme-components.vercel.app/api?component=button&text=Show+Live+Demo+)](https://codesandbox.io/s/q3934)
+
+</div>
+
+<br>
+<h2 align="center">API reference</h2>
 
 <table width="100%">
 
