@@ -1,11 +1,13 @@
 <div align="center">
   <img src="./Logo.svg"> 
-  <h1>React Push Notify</h1>
-  <h3>I want to be your :heart: notification in your React application</h3>
+  <h1>Notify</h1>
+  <h3>Notification component made easy for your react project</h3>
 
 ---
 
-<span>React Push Notify is React-based component for displaying push notifications in the browser. React Push Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
+<span>Notify is React-based component for displaying push notifications in the browser. 
+
+Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 </span>
 
 [Download](https://www.npmjs.com/package/react-push-notify) • 
@@ -20,7 +22,7 @@
 ### Intro
 ---
 
-When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight the users, I did not find a one that requires only **one line of code**. So, I decided to design and develop React Push Notify for displaying out-of-the-box push notifications.
+When I started looking for _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_ push notification for my React applications that fits my needs and delight the users, I did not find a one that requires only **one line of code**. So, I decided to design and develop Notify for displaying out-of-the-box push notifications.
 
 
 ### Features
@@ -41,7 +43,7 @@ When I started looking for _well designed_, _compatible_, _lightwhite_, _customi
 ### Installation
 ---
 
-To get started with React Push Notify, you can simply install it via npm.
+To get started with Notify, you can simply install it via npm.
 
 ```
 npm install @ala_eddine/react-push-notify
@@ -52,7 +54,7 @@ npm install @ala_eddine/react-push-notify
 ### Basic Usage
 ---
 
-To add React Push Notify in your application, you need to import it from its package and define the **required** properties.
+To add Notify in your application, you need to import it from its package and define the **required** properties.
 
 ```Javascript
 import Notify from "@ala_eddine/react-push-notify";
@@ -115,7 +117,7 @@ return (<Notify {...props} />);
 
 #### What about the Dark Mode?
 
-Don't worry, the  Dark Mode is included too. You need to add just `darkmode` property.
+Don't worry, the  **Dark Mode** is included too. You need to add just `darkmode` property.
 
 ```Javascript
 return (<Notify {...props} darkmode/>)
