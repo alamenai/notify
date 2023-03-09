@@ -11,7 +11,6 @@ document.title = 'Notify 0.2.0';
 ReactDOM.render(
 	<React.StrictMode>
 		<Notification {...props}>
-			<Media src={MEDIA_PATH} link='https://www.github.com' />
 		</Notification>
 	</React.StrictMode>,
 	document.getElementById('root')
