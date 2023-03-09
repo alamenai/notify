@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Notification, { Media } from './components/Notification';
-import MEDIA_PATH from './assets/videos/sample_video.mp4';
+import Notification from './components/Notification';
 import { props } from './props';
 
 document.title = 'Notify 0.2.0';
