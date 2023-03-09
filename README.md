@@ -5,14 +5,18 @@
 
 ---
 
-<span>Notify is React-based component for displaying push notifications in the browser. 
+<span>Notify is React-based component for displaying push notifications in the browser.
 
 Notify is meant to be _well designed_, _compatible_, _lightwhite_, _customizable_ and _easy to use_.
 </span>
 
-[Download](https://www.npmjs.com/package/react-push-notify) • 
-[Demo](https://eejv4.csb.app/) • 
-[Contribute](https://github.com/MenaiAla/notify/pulls) 
+[Download](https://www.npmjs.com/package/react-push-notify) •
+[Demo](https://eejv4.csb.app/) •
+[Contribute](https://github.com/MenaiAla/notify/pulls)
+
+<br>
+<img src="./screenshots/screenshot-1.png">
+<br>
 
 </div>
 <br>
@@ -49,6 +53,7 @@ To get started with Notify, you can simply install it via npm.
 ```
 npm install @ala_eddine/react-push-notify
 ```
+
 <br>
 <div align="center">
 
@@ -91,7 +96,6 @@ return (<Notify {...props} />);
 
 </div>
 
-
 <br>
 <h2 align="center">Advanced Usage</h2>
 
@@ -126,10 +130,11 @@ const props = { type, data, style, action };
 return (<Notify {...props} />);
 
 ```
+
 <br>
 <h2 align="center">What about the Dark Mode?</h2>
 
-Don't worry, the  **Dark Mode** is included too. You need to add just `darkmode` property.
+Don't worry, the **Dark Mode** is included too. You need to add just `darkmode` property.
 
 ```Javascript
 return (<Notify {...props} darkmode/>)
@@ -141,9 +146,9 @@ return (<Notify {...props} darkmode/>)
 Now, you can include a Media (image, video) to your Notification.
 
 ```js
-        <Notify {...props} darkmode >
-            <Media src={MEDIA_PATH} link={LINK} />
-        </Notify>
+<Notify {...props} darkmode>
+	<Media src={MEDIA_PATH} link={LINK} />
+</Notify>
 ```
 
 <br>
@@ -207,7 +212,6 @@ success | error | warning
 </td>
 </tr>
 
-
 <tr align="center">
 <td>
 data
@@ -236,7 +240,6 @@ message: string
 -
 </td>
 </tr>
-
 
 <tr align="center">
 <td>
@@ -272,8 +275,6 @@ duration: string
 </td>
 </tr>
 
-
-
 <tr align="center">
 <td>
 action
@@ -301,7 +302,6 @@ event: function
 </td>
 </tr>
 
-
 <tr align="center">
 <td>
 autohide
@@ -328,9 +328,13 @@ true
 </table>
 
 ### Changelog
+
 ---
+
 [Changelog](/CHANGELOG.md).
 
 ### Licence
+
 ---
+
 [MIT](/LICENSE).
